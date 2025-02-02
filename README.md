@@ -1,0 +1,1 @@
+This fork is a IDF component variant of BleScanner and relies on the `esp-nimble-cpp` library.
