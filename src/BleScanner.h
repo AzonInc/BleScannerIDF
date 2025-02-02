@@ -11,8 +11,8 @@
  *
  */
 
-#include "Arduino.h"
 #include <string>
+#include <vector>
 #include <NimBLEDevice.h>
 #include "BleInterfaces.h"
 
@@ -83,7 +83,15 @@ class Scanner : public Publisher, BLEAdvertisedDeviceCallbacks {
      *
      * @param advertisedDevice
      */
-    void onResult(NimBLEAdvertisedDevice* advertisedDevice) override;
+    void onResult(const NimBLEAdvertisedDevice* advertisedDevice) override;
+    
+    /**
+     * @brief Whitelist a specific BLE Address
+     *
+     * @param whiteListBleAddress
+     */
+    void whitelist(BLEAddress bleAddress);
+
 
   private:
     uint32_t scanDuration = 0; //default indefinite scanning time

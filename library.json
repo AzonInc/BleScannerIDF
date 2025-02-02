@@ -2,7 +2,15 @@
   "name": "BleScanner",
   "version": "1.1.0",
   "description": "Generic BleScanner using NimBle listening to advertisements. Used by NukiBleEsp32 and EnOcean libraries",
-  "keywords": "ble esp32 scanner",
+  "keywords": [
+    "ble",
+    "esp32",
+    "scanner",
+    "nimble",
+    "espidf",
+    "espressif"
+  ],
+  "license": "GPL-3.0",
   "authors": [
     {
       "name": "Jeroen van de Vorst",
@@ -12,14 +20,8 @@
       "name": "Bas Schouten"
     }
   ],
-  "frameworks": "Arduino",
-  "platforms": [
-    "espressif32"
-  ],
-  "dependencies": [
-    {
-      "name": "NimBLE-Arduino",
-      "version": "h2zero/NimBLE-Arduino @ ^1.4.0"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/I-Connect/BleScanner"
+  }
 }
